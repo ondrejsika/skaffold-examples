@@ -1,0 +1,19 @@
+# Mac
+.DS_Store
+
+# Editor
+.vscode
+.idea
+
+# Generic
+*.log
+*.backup
+*.local.sh
+*.local.yml
+*.local.yaml
+*.local.json
+*.local.txt
+
+# Kuberneres
+kubeconfig.yml
+kubeconfig.*.yml
