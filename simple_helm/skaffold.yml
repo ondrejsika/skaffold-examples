@@ -1,0 +1,12 @@
+apiVersion: skaffold/v2beta25
+kind: Config
+deploy:
+  helm:
+    releases:
+      - name: hello-from-skaffold
+        namespace: hello-from-skaffold
+        createNamespace: true
+        remoteChart: sikalabs/hello-world
+        setValues:
+          host: "hello-from-skaffold.panda.k8s.sl.zone"
+          replicas: 2
